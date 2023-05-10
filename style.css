@@ -72,4 +72,12 @@ nav ul li a:hover {
     background-color: white;
     margin-left: 100px;
     margin-right: 100px;
+    box-shadow: 2px 2px 20px black;
 }
+
+article {
+    background-color: #1349139d;
+    align-items: center;
+    height: 350px;
+}
+
