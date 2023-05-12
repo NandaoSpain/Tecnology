@@ -81,3 +81,12 @@ article {
     height: 350px;
 }
 
+article iframe {
+    display:grid;
+    padding: 20px;
+    
+}
+
+.history image {
+    align-items: center;
+}
