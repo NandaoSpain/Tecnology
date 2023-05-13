@@ -8,6 +8,11 @@
     font-weight: normal;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 :root {
     --cor0: #ebe5c5;
     --cor1: #83e1ad;
@@ -36,7 +41,9 @@ nav {
 }
 
 main {
-    background-color: white;    
+    background-color: white;
+    max-width: 800px;
+    min-width: 400px;    
 }
 
 header > h1 {
