@@ -44,7 +44,19 @@ nav {
 main {
     background-color: white;
     max-width: 800px;
-    min-width: 400px;    
+    min-width: 400px; 
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main img.pequena {
+    width: 50%;
+    margin: auto;
+    display: block;
 }
 
 header > h1 {
