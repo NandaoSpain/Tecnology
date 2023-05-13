@@ -34,7 +34,6 @@ body {
 
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-    color: white;
     min-height: 150px;
     text-align: center;
     font-size: 1.2em;
@@ -59,6 +58,7 @@ nav {
     background-color: var(--cor5);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.377);
+    text-align:center;
 }
 
 nav a {
@@ -87,10 +87,55 @@ main {
     border-bottom-right-radius: 10px;
 }
 
+main h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+main strong {
+    color: var(--cor4);
+    border-radius: 3px;
+    padding: 5px;
+    transition-duration: 0.5s;
+}
+
+main strong:hover {
+    background-color: var(--cor3);
+    color: white;
+    cursor: pointer;
+}
+
+main a {
+    text-decoration: none;
+    color: rgba(4, 4, 121, 0.466);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+main a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgba(0, 0, 255, 0.473);
+    background-color: rgba(169, 169, 169, 0.212);
+}
+
 main img.pequena {
-    width: 50%;
+    max-width: 400px;
     margin: auto;
     display: block;
+}
+
+main h2{
+    font-size: 1.4em;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
 }
 
 header > h1 {
@@ -110,9 +155,73 @@ main h2 {
 
 footer {
     background-color: var(--cor5);
-    color: white;
+    color: var(--cor3);
+    text-align: center;
+    padding: 10px;
+    font-size: .8em;
 }
 
 img{
     width: 100%;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.39);
+}
+
+aside > ul {
+    list-style: '\2714\00a0\00a0';
+    text-indent: 10px;
+    list-style-position: inside;
+    columns: 2;
+    font-size: .9em;
+    
+}
+
+div.video {
+    background-color: var(--cor5);
+    padding: 20px;
+    margin: 0px 0px 30px 0px;
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 54%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    right: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+aside h3 {
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
+}
+
+a.externo::after {
+    content: '\00A0\1f517';
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    padding: 10px;
+    margin: -10px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cor1);
+    text-decoration: underline;
 }
